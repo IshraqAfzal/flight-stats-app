@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP3322 Assignment-2</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Hong Kong International Airport</h1>
+      <h2>Flight information</h2>
+      <div id="error"></div>
+      <form id="form" novalidate>
+        <label for="date">Date of Flight</label>
+        <input type="date" id="date" name="date" min="" max="" required />
+        <input type="submit" id="searchButton" value="Submit" />
+      </form>
+      <div id="flightStatistics"></div>
+      <main id="main">
+        <section id="left">
+          <p id="heading1"></p>
+          <div id="departures"></div>
+          <div id="destinations"></div>
+          <div id="DSpecial"></div>
+          <div id="histogram1"></div>
+          <div id="title1"></div>
+          <div id="destinationsTable">
+            <table id="topDestinations">
+              <tr>
+                <td id="empty1"></td>
+                <td id="airport1"></td>
+                <td id="flightNum1"></td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section id="right">
+          <p id="heading2"></p>
+          <div id="arrivals"></div>
+          <div id="origins"></div>
+          <div id="ASpecial"></div>
+          <div id="histogram2"></div>
+          <div id="title2"></div>
+          <div id="originsTable">
+            <table id="topOrigins">
+              <tr>
+                <td id="empty2"></td>
+                <td id="airport2"></td>
+                <td id="flightNum2"></td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

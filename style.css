@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  height: 10000px;
+}
+
+#container {
+  height: 100%;
+  background-color: gainsboro;
+}
+
+main {
+  margin-top: 2rem;
+  display: flex;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  margin-right: 0.5rem;
+}
+
+#searchButton {
+  margin-left: 0.5rem;
+}
+
+#error {
+  margin-top: 2rem;
+  text-align: center;
+  color: red;
+}
+
+#flightStatistics {
+  margin-top: 4rem;
+  font-size: medium;
+  text-align: center;
+  font-weight: bold;
+}
+
+#destinationsTable,
+#originsTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+tr,
+td {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+#title1,
+#title2 {
+  margin-top: 2rem;
+}
+
+#title1,
+#title2,
+#flightNum1,
+#flightNum2,
+#airport1,
+#airport2 {
+  font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container {
+    width: 1200px;
+  }
+
+  #left {
+    width: 500px;
+    flex: 1;
+    text-align: center;
+  }
+
+  #right {
+    width: 500px;
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+  #container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  table {
+    font-size: small;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  #left,
+  #right {
+    flex: none;
+    width: 349px;
+  }
+}
